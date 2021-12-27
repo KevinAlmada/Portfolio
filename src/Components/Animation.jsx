@@ -6,7 +6,7 @@ const DivAnimation = styled.div`
 const Animation = () => {
     return (
         <DivAnimation>
-            <iframe src="https://embed.lottiefiles.com/animation/83549"></iframe>
+            <iframe title="computer" src="https://embed.lottiefiles.com/animation/83549"></iframe>
         </DivAnimation>
     )
 }
