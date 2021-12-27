@@ -7,7 +7,7 @@ import { CardActionArea } from '@mui/material';
 
 export default function ActionAreaCard({title,img,description}) {
   return (
-    <Card sx={{ maxWidth: 345,margin : "20px 0",'& .MuiCardContent-root':{backgroundColor:"#701a48"},'& .MuiTypography-root':{color:"#FEC260"} }}  >
+    <Card sx={{ maxWidth: 345,margin : "20px",'& .MuiCardContent-root':{backgroundColor:"#701a48"},'& .MuiTypography-root':{color:"#FEC260"} }}  >
       <CardActionArea>
         <CardMedia
           component="img"

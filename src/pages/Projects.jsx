@@ -8,7 +8,6 @@ const ProjectsSection = styled.section`
     background-color: #A12568;
     color: #FEC260;
     justify-content: center;
-    min-height: 100vh;
 `;
 const ProjectsTitle = styled.h2`
     margin: 0 auto;
