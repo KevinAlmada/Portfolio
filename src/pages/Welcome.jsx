@@ -16,9 +16,8 @@ const WelcomeSection = styled.section `
 `;
 const TitleP = styled.p `
     font-size: 36px;
-    
+    text-align :center ;
     color: white;
-    
 `;
 
 const Welcome = () => {
