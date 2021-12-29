@@ -1,0 +1,53 @@
+@mixin levitate($name , $duration: 10s, $count: infinite) {
+    @keyframes default_anim {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes invert_rotate {
+        0% {
+            transform: rotate(360deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-iteration-count: $count;
+    animation-fill-mode: backwards;
+}
+.divKia{
+    display: flex;
+    margingigi-top:20px ;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    position: relative;
+    .outSquare{
+        width: 100px;
+        aspect-ratio: 1/1;
+        top: 0;
+        position: absolute;
+        border: 1px white solid;
+        transition: all 0.5s ease;
+        @include levitate( default_anim);
+    }
+    .innerSquare{
+        width: 70px;
+        aspect-ratio: 1/1;
+        top: 15px;
+        position: absolute;
+        border: 1px white solid;
+        transform: rotate(45deg);
+        @include levitate( invert_rotate);
+    }
+    .kiaSquare{
+        position: absolute;
+        top: 26px;
+        font-family: 'Syncopate', sans-serif;
+    }
+}

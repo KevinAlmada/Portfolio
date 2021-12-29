@@ -9,7 +9,7 @@ const AboutMeInfo = () => {
         <AboutMeInfoStyled>
             <h2>ABOUT ME</h2>
             <hr />
-            <p>Hi stranger , my name is Kevin Ivan Almada (K.I.A.) , im a web developer from Buenos Aires Argentina ,I love videogames ,series and programming.</p>
+            <p>Hi stranger, my name is Kevin Ivan Almada (K.I.A.), im a web developer from Buenos Aires Argentina, I love videogames ,series and programming.</p>
         </AboutMeInfoStyled>
     )
 }

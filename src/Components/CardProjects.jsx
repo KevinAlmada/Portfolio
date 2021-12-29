@@ -5,8 +5,9 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-export default function ActionAreaCard({title,img,description}) {
+export default function ActionAreaCard({title,img,description,url}) {
   return (
+    <a target="_blank" rel="noreferrer" href={url}>
     <Card sx={{ maxWidth: 345,margin : "20px",'& .MuiCardContent-root':{backgroundColor:"#701a48"},'& .MuiTypography-root':{color:"#FEC260"} }}  >
       <CardActionArea>
         <CardMedia
@@ -25,5 +26,6 @@ export default function ActionAreaCard({title,img,description}) {
         </CardContent>
       </CardActionArea>
     </Card>
+    </a>
   );
 }

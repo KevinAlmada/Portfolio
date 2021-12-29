@@ -11,6 +11,7 @@ const ProjectsSection = styled.section`
 `;
 const ProjectsTitle = styled.h2`
     margin: 0 auto;
+    letter-spacing: 3px;
 `;
 const Projects = () => {
     return (
