@@ -2,27 +2,43 @@
     @keyframes default_anim {
         0% {
             transform: rotate(0deg);
+            width: 100px;
+            top: 0;
         }
-        100% {
+        50% {
+            width: 150px;
             transform: rotate(360deg);
+            top: -35px;
+        } 
+        100%{
+            transform: rotate(0deg);
+            width: 100px;
+            top: 0;
         }
     }
     @keyframes invert_rotate {
         0% {
-            transform: rotate(360deg);
+            width:70px;
+            transform: rotate(45deg);
+        }
+        50% {
+            width:150px;
+            transform: rotate(-425deg);
+            top: -35px;
         }
         100% {
-            transform: rotate(0deg);
+            width:70px;
+            transform: rotate(45deg);
         }
     }
     animation-name: $name;
     animation-duration: $duration;
     animation-iteration-count: $count;
-    animation-fill-mode: backwards;
+    animation-timing-function: linear;
 }
 .divKia{
     display: flex;
-    margingigi-top:20px ;
+    margin-top:20px ;
     justify-content: center;
     align-items: center;
     font-size: 36px;
