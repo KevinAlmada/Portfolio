@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
-import React from 'react'
+import React, { useContext } from 'react'
+import LanguageContext from '../context/LanguageContext';
 import CardContainer from '../Components/CardContainer';
 const ProjectsSection = styled.section`
     display:grid;
@@ -14,9 +15,12 @@ const ProjectsTitle = styled.h2`
     letter-spacing: 3px;
 `;
 const Projects = () => {
+    const {language} = useContext(LanguageContext)
     return (
         <ProjectsSection>
-            <ProjectsTitle>LATEST PROJECTS</ProjectsTitle>
+            <ProjectsTitle>
+            {language === true ? "ULTIMOS PROYECTOS":"LATEST PROJECTS"}
+            </ProjectsTitle>
             <CardContainer />
         </ProjectsSection>
     )
