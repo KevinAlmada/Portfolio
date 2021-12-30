@@ -11,9 +11,11 @@ const SectionAboutMe = styled.section`
     align-items: center;
     height: 100vh;
     color: white;
-    @media (min-width: 768px) {
+    @media (min-width: 500px) {
+        font-size: 20px;
+      }
+      @media (min-width: 768px) {
         flex-direction: row;
-        font-size: 30px;
       }
 `;
 const AboutMe = () => {

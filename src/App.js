@@ -5,6 +5,8 @@ import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import LanguageContext from "./context/LanguageContext";
 import { useState } from "react";
+import Skills from "./pages/Skills";
+import ToTop from "./Components/ToTop";
 function App() {
   const [language, setLanguage] = useState(false)
   return (
@@ -13,8 +15,10 @@ function App() {
         <Header />
         <Welcome />
         <AboutMe />
+        <Skills />
         <Projects />
         <Contact/>
+        <ToTop/>
       </div>
     </LanguageContext.Provider>
   );

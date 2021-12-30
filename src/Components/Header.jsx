@@ -16,7 +16,7 @@ const Header = () => {
         setLanguage(e.target.checked);
     }
     return (
-        <HeaderStyles>
+        <HeaderStyles id="kia">
          <div className='divKia'><div className='outSquare'></div><div className='innerSquare'></div><span className='kiaSquare'>KIA</span></div>
          <SwitchToogle onChange={handleChange}/>
         </HeaderStyles>

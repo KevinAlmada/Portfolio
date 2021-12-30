@@ -21,7 +21,7 @@ const SwitchToogle = styled(Switch)(({ theme }) => ({
       backgroundSize:'contain'},
       '& + .MuiSwitch-track': {
         opacity: 1,
-        backgroundColor: theme.palette.mode === 'dark' ? '#8796A5' : '#aab4be',
+        backgroundColor: theme.palette.mode === 'dark' ? '#003892' : '#001e3c',
       },
     },
   },
@@ -44,7 +44,7 @@ const SwitchToogle = styled(Switch)(({ theme }) => ({
   },
   '& .MuiSwitch-track': {
     opacity: 1,
-    backgroundColor: theme.palette.mode === 'dark' ? '#8796A5' : '#aab4be',
+    backgroundColor: theme.palette.mode === 'dark' ? '#cbda4b' : '#f1e20e',
     borderRadius: 20 / 2,
   },
 }));
