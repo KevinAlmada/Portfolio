@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
-import React from 'react'
+import React, { useContext } from 'react'
+import LanguageContext from '../context/LanguageContext';
 import Animation from '../Components/Animation'
 const WelcomeSection = styled.section `
     width: 100%;
@@ -9,7 +10,7 @@ const WelcomeSection = styled.section `
     justify-content: space-evenly;
     align-items: center;
     height: 100vh;
-    @media (min-width: 768px) {
+    @media (min-width: 900px) {
         flex-direction: row;
         font-size: 50px;
       }
@@ -21,9 +22,10 @@ const TitleP = styled.p `
 `;
 
 const Welcome = () => {
+    const {language} = useContext(LanguageContext)
     return (
         <WelcomeSection>
-            <TitleP>WELCOME TO MY PORTFOLIO</TitleP>
+            <TitleP>{language === true ? "BIENVENIDO A MI PORTFOLIO":"WELCOME TO MY PORTFOLIO"}</TitleP>
             <Animation />
         </WelcomeSection>
     )

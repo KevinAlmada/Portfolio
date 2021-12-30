@@ -1,5 +1,7 @@
 import styled from '@emotion/styled'
-import React from 'react'
+import React, { useContext } from 'react'
+import LanguageContext from '../context/LanguageContext';
+
 
 const SectionContact = styled.section`
 padding: 25px 0px;
@@ -40,17 +42,22 @@ const LinksContact = styled.a`
 -moz-box-shadow: 3px 9px 15px 0px rgba(136,22,22,0.65);
   };
   @media screen and (min-width:500px) {
-    font-size: 30px;
-    width: 25%;
-    height: 100px;
+    font-size: 18px;
+    width: 28%;
+    height: 50px;
     flex-direction: column;
+    };
+  @media screen and (min-width:678px) {
+    font-size: 24px;
+    height: 80px;
     };
 `;
 const Contact = () => {
+    const {language} = useContext(LanguageContext)
     return (
         <SectionContact>
             <Buttons>
-                <LinksContact href="/CV_KevinIvanAlmada.pdf" download>Resume <i className="fas fa-file-download"></i></LinksContact>
+                <LinksContact href="/CV_KevinIvanAlmada.pdf" download>{language === true ?"Curriculum" :"Resume"} <i className="fas fa-file-download"></i></LinksContact>
                 <LinksContact href="https://github.com/KevinAlmada" >GitHub <i className="fab fa-github-alt"></i></LinksContact>
                 <LinksContact href="https://www.linkedin.com/in/kevin-almada/" >LinkedIn <i className="fab fa-linkedin-in"></i></LinksContact>
             </Buttons>
