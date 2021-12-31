@@ -16,6 +16,7 @@ const SectionAboutMe = styled.section`
       }
       @media (min-width: 768px) {
         flex-direction: row;
+        height: 60vh;
       }
 `;
 const AboutMe = () => {
